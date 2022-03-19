@@ -20,7 +20,8 @@ self.addEventListener("activate", () =>{
 
 self.addEventListener("fetch", (event) => {
     console.log(
-        '${PREFIX} fetching : ${event.request.url}, Mode : ${event.request.mode}');
+        `${PREFIX} fetching : ${event.request.url}, Mode : ${event.request.mode}`    
+    );
     if (event.request.mode == 'navigate'){
         event.respondWith((async () => {
             try{
