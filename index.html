@@ -47,6 +47,17 @@
 
     <!-- FOR ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+   
+    <script>
+        window.addEventListener('load',()=> {
+            if ("serviceWorker" in navigator){
+                navigator.serviceWorker.register('/SW.js')
+            }
+        })
+        
+    </script>
+
+
     </head>
     <body>
         <!--===== HEADER =====-->
